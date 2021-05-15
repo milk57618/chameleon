@@ -4,7 +4,6 @@ from datetime import datetime
 
 
 class Monitor():
-
     def __init__(self):
         self.DHT_SENSOR = Adafruit_DHT.DHT22
         self.DHT_PIN = 4
