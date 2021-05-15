@@ -1,5 +1,5 @@
-from kibeom.zero.report import Reporter
-from kibeom.zero.htmonitor import Monitor
+from zero.report import Reporter
+from zero.htmonitor import Monitor
 
 monitor = Monitor()
 h,t = monitor.getHumidTemp()
