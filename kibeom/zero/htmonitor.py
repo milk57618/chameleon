@@ -9,6 +9,6 @@ class Monitor():
         self.DHT_PIN = 4
         self.POS = "TH01"
     
-    def getHumidTemp():
+    def getHumidTemp(self):
         h,t = Adafruit_DHT.read_retry(self.DHT_SENSOR,self.DHT_PIN)
         return h,t

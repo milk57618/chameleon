@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 class Reporter():
-    def sendData(h,t):
+    def sendData(self,h,t):
         data = {'humid': h, 
                 'temp': t 
                 }
