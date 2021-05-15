@@ -8,7 +8,7 @@ class Reporter():
                 'temp': t 
                 }
 
-        now = datetime.datetime.now()
+        now = datetime.now()
         formattedDate = now.strftime("%Y%m%d_%H%M%S")
 
         data['time'] = formattedDate
