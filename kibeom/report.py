@@ -5,4 +5,7 @@ def sendData(h,t):
             'time': '2021051623123232'}
     URL = 'luvbeenhere.com/report'
     res = requests.post(URL, data=json.dumps(data))
+    print(res.text)
+
+sendData(1,2)
 
