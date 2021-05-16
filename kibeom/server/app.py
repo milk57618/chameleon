@@ -2,7 +2,7 @@ from flask import Flask,request
 from flask_restful import Api
 from functools import reduce
 
-from proxy import *
+from proxy.util import *
 
 app = Flask(__name__)
 api = Api(app)
@@ -23,7 +23,7 @@ def saveData():
 def sendimhere():
     isworking = False
     try:
-        isworking = proxy.util.testfunction()
+        isworking = util.testfunction()
     except Exception as e:
         with open('log','a') as f:
             f.write(str(e))
