@@ -23,7 +23,7 @@ def saveData():
 def sendimhere():
     isworking = False
     try:
-        isworking = util.testfunction()
+        isworking = proxy.util.testfunction()
     except Exception as e:
         with open('log','a') as f:
             f.write(str(e))
