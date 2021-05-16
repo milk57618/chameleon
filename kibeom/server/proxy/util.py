@@ -1,10 +1,9 @@
-import psutil
+import socket
+
 
 def testfunction():
     return True
 
 def getSubnet():
-    addrs = psutil.net_if_addrs()
-    print(addrs)
-
-getSubnet()
+    addrs = socket.if_nameindex()
+    return addrs
