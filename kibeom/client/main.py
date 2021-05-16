@@ -4,11 +4,10 @@ from zero.htmonitor import Monitor
 import time
 
 monitor = Monitor()
-
-
 reporter = Reporter()
 
+time.sleep(1)
 while True:
-    time.sleep(15)
     h,t = monitor.getHumidTemp()
     reporter.sendData(h,t)
+    time.sleep(15)
